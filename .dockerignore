@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules
+web/node_modules
+
+# Logs
+*.log
+
+# Build
+web/dist
+web/.vite
+
+# System
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Git
+.git
+.gitignore
