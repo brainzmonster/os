@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+transformers
+sentence-transformers
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic
+scikit-learn
+huggingface-hub
+evaluate
+torch
+pytest
+requests
