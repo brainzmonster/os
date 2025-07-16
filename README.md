@@ -136,14 +136,14 @@ docker-compose up --build
 
 then open: http://localhost
 
-## docker Setup
+## docker setup
 
 brainz was built for containers. no dependency hell. one command boot.
 
 1. make sure docker and docker compose are installed on your system.
-2. Clone the repository and nav
-igate to the root directory.
-3. Copy the environment file:
+2. clone the repository and navigate to the root directory.
+3. copy the environment file:
+   
 ```bash
 cp .env.example .env
 ```
