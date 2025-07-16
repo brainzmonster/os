@@ -22,7 +22,7 @@ live fine-tuning, vector memory, self-training agents – all local, all modular
 
 ---
 
-## ⚡ why brainz?
+## why brainz?
 
 other llms: closed apis, no memory, no self-learning.  
 brainz:  
@@ -36,7 +36,7 @@ this isn’t "an ai chatbot". this is infrastructure. degen style.
 
 ---
 
-## 🛠 features
+## features
 
 - real-time training from user input or logs  
 - memory engine with semantic vector search (postgres + sentence-transformers)  
@@ -47,7 +47,7 @@ this isn’t "an ai chatbot". this is infrastructure. degen style.
 
 ---
 
-## 🧠 tech stack
+## tech stack
 
 **backend**: fastapi, sqlalchemy, postgresql, transformers, sentence-transformers  
 **frontend**: react, vite, tailwind css  
@@ -55,7 +55,7 @@ this isn’t "an ai chatbot". this is infrastructure. degen style.
 
 ---
 
-## 📂 directory
+## directory
 
 ```
 brainz/
