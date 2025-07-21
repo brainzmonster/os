@@ -65,10 +65,10 @@ brainz/
 │   ├── models/         # inference, trainer, adapter
 │   ├── data/           # tokenizer, dataset, vectorizer
 │   ├── agents/         # autotrainer, feedback, optimizers
-│ 	├── services/       # memory, analytics, user logic
-│	  ├── db/             # schema + queries
-│  	├── utils/          # metrics, evals, crypto
-│ 	├── tests/          # pytest suite
+│   ├── services/       # memory, analytics, user logic
+│   ├── db/             # schema + queries
+│   ├── utils/          # metrics, evals, crypto
+│   ├── tests/          # pytest suite
 │   ├── gunicorn.conf.py
 │   └── requirements.txt
 │
