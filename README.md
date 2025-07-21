@@ -66,8 +66,8 @@ brainz/
 │   ├── data/           # tokenizer, dataset, vectorizer
 │   ├── agents/         # autotrainer, feedback, optimizers
 │ 	├── services/       # memory, analytics, user logic
-│	├── db/               # schema + queries
-│	├── utils/            # metrics, evals, crypto
+│	  ├── db/             # schema + queries
+│  	├── utils/          # metrics, evals, crypto
 │ 	├── tests/          # pytest suite
 │   ├── gunicorn.conf.py
 │   └── requirements.txt
