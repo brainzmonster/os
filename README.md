@@ -104,6 +104,17 @@ cd ../web
 npm install
 ```
 
+optional (editable install for entry points):
+
+```bash
+# from repo root
+pip install -e .
+
+# now you can use:
+brainz-server   # starts the api
+brainz-train    # cli train entry point
+```
+
 ## usage
 
 start the backend server:
@@ -111,6 +122,15 @@ start the backend server:
 ```bash
 bash scripts/run_server.sh
 ```
+
+server flags (new):
+
+- prod – production mode (disables auto-reload)
+- no-reload – disable hot-reload in dev
+- log=logs/api.out – tee uvicorn output to file
+- host=0.0.0.0 – bind host (default: 0.0.0.0)
+- port=8000 – base port (default: 8000)
+- auto-port – auto-pick free port if base is busy
 
 start the frontend:
 
@@ -185,6 +205,22 @@ create `.env` from `.env.example` and update:
 MODEL_NAME=tiiuae/falcon-rw-1b
 DATABASE_URL=postgresql://user:pass@localhost:5432/brainz
 DEBUG=true
+```
+
+## db init extras
+```bash
+# seeding control
+SKIP_DB_SEEDING=false
+ADMIN_USER=admin
+ADMIN_KEY=root-dev-key
+ADMIN_KEY_AUTO=false                 # if true → auto-generate secure key
+
+# optional bulk user seeding (json or jsonl)
+BRAINS_SEED_USERS_FILE=./database/seed/users.jsonl
+
+# optional one-shot admin key rotation
+ROTATE_ADMIN_KEY=false
+ROTATE_ADMIN_KEY_VALUE=              # optional explicit value
 ```
 
 ## testing
